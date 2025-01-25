@@ -5,7 +5,7 @@ unique_category = data['category'].unique()
 unique_storename = data['store'].unique()
 
 selected_category = st.multiselect("select category",options=unique_category)
-selected_store = st.multiselect("select store",options=unique_store)
+selected_store = st.multiselect("select store",options=unique_storename)
 
 criteria1 = data['category'].isin(selected_category) 
 criteria2 = data['store'].isin(selected_store)
