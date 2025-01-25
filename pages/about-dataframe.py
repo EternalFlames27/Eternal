@@ -1,6 +1,6 @@
 import pandas as pd
-
-data = pd.read_excel('source.xlsx')
+import streamlit as st
+data = pd.read_excel('./pages/source.xlsx')
 
 criteria1 = data['category'] == 'food'
 criteria2 = data['store'] == 5
