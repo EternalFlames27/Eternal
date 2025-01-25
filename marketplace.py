@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 st.title("anything store")
 st.subheader("we literally have anything!")
-df = pd.read_excel('source.xlsx')
+df = pd.read_excel('./pages/source.xlsx')
 
 with st.container(border=True):
     selected_category = st.selectbox("Choose what category you're looking for",options=df['category'].unique())
