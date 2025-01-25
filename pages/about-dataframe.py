@@ -12,3 +12,4 @@ data[criteria5]
 
 
 print(data[criteria5].sort_values('price',ascending=True))
+st.dataframe(data)
