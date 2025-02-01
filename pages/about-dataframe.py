@@ -18,7 +18,6 @@ join_criteria =  (criteria1) & (criteria2) & (criteria3)
 
 
 
-data = data[join_criteria]
-
-print(data[criteria5].sort_values('price',ascending=True))
-st.dataframe(data,use_container_width=True)
+with st.container(border=True):
+  data = data[join_criteria]
+  st.dataframe(data,use_container_width=True)
