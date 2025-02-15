@@ -20,4 +20,9 @@ join_criteria =  (criteria1) & (criteria2) & (criteria3)
 
 with st.container(border=True):
   data = data[join_criteria]
+
+  product_picture = data.iloc[0]['picture']
+  st.image(Product_picture)
+
+  
   st.dataframe(data,use_container_width=True)
