@@ -24,7 +24,7 @@ with st.container(border=True):
   
   for i in range(data_count):
     product_picture = data.iloc[i]['picture']
-    st.image(Product_picture,width = 240)
+    st.image(product_picture,width = 240)
 
   
   st.dataframe(data,use_container_width=True)
