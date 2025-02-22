@@ -8,4 +8,5 @@ conversion_factors = {
   'time':None,
 }
 
-  category = st.radio("select category",options=conversion_factor.keys())
+category_list = list(conversion_factor.keys())
+category = st.radio("select category",options=category_list)
