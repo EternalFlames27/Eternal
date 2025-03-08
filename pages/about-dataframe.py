@@ -25,6 +25,8 @@ with st.container(border=True):
   for i in range(data_count):
     product_picture = data.iloc[i]['picture']
     st.image(product_picture,width = 240)
+    if st.button("buy now!",key=str(i)):
+      st.write("Thank you for buying our product! It will arrive shortly.")
 
   
   st.dataframe(data,use_container_width=True)
