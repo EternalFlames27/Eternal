@@ -19,7 +19,7 @@ join_criteria =  (criteria1) & (criteria2) & (criteria3)
 
 data = data[join_criteria]
 data_count = len(data)
-
+ncolumns = 4
 columns = st.columns(ncolumns)
 
 for i in range(data_count):
