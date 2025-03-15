@@ -33,7 +33,7 @@ for i in range(data_count):
         btnc1,btnc2 = st.columns(2)
     
         with st.container():
-          with btnc:
+          with btnc1:
             if st.button("buy now!",key=str(i)):
               st.write("Thank you for buying this product! It will arrive shortly.")
           with btnc2:
